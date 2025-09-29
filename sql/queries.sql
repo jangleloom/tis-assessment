@@ -1,5 +1,7 @@
--- SQL query to get total sales revenue per product category per month
--- Joining FactSales with DimDate and DimProduct to get the necessary details
+/* 
+SQL query to get total sales revenue per product category per month
+Joining FactSales with DimDate and DimProduct to get the necessary detail
+*/
 SELECT 
     d.Year,
     d.Month,
