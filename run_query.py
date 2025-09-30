@@ -14,6 +14,9 @@ print("What is the total revenue for each product category for each month in the
 # Execute the query and store results in a DataFrame
 results = pd.read_sql_query(query, conn)
 
+print("\n=== QUERY RESULTS ===")
+print(results)
+
 print(f"\n=== SUMMARY ===")
 print(f"Total rows returned: {len(results)}")
 print(f"Total revenue across all categories: ${results['TotalRevenue'].sum():.2f}")
