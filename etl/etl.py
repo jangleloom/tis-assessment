@@ -42,11 +42,13 @@ def transform_product(products):
     return dim_product
 
 # Create FactSales ie. Fact table for sales transactions
+# One row per transaction, drop invalid or missing data 
 # Calculate Revenue as Quantity * Price
 def transform_fact_sales(orders):
     fact_sales = orders.copy()
 
-    # Drop rows with missing values in critical columns
+    # -----CHECK THAT FACT TABLE HAS NO MISSING OR INVALID DATA-----
+    # Drop rows with missing values
     fact_sales = fact_sales.dropna(subset=["OrderID", "CustomerID", "ProductID", "OrderDate", "Quantity", "Price"])
 
     # Drop if quantity <= 0 or price <= 0
@@ -85,6 +87,7 @@ if __name__ == "__main__":
     try:
         orders, products = extract("data/orders.csv", "data/products.csv")
         
+        #TESTING PURPOSES ONLY
         print("\n=== Orders Data ===")
         print(f"Columns: {list(orders.columns)}")
         print(orders.head())

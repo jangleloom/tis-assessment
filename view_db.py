@@ -1,6 +1,7 @@
 import sqlite3
 import pandas as pd
 
+# =====FOR DEBUGGING PURPOSES=====
 # Connect to the database
 conn = sqlite3.connect('warehouse.db')
 
