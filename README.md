@@ -12,7 +12,7 @@ This project implements a complete ETL pipeline for sales data transformation, f
 ## PROJECT STRUCTURE
 
 ```
-govtech_assessment/
+tis-assessment/
 ├── .gitignore             # Git ignore file to exclude generated files
 ├── data/
 │   ├── orders.csv          # Raw sales transaction data
@@ -42,7 +42,7 @@ govtech_assessment/
 ```bash
 # 1. Clone the repository
 git clone https://github.com/jangleloom/tis-assessment
-cd govtech_assessment
+cd tis-assessment
 
 # 2. Create and activate virtual environment
 python -m venv .venv
@@ -63,7 +63,7 @@ python etl/etl.py
 # 5. Execute business analytics query
 python run_query.py
 
-# 6. (Optional) Inspect database contents
+# 6. (Optional) Inspect database contents, can be used for debugging purposes
 python view_db.py
 ```
 
