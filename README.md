@@ -1,6 +1,6 @@
 # ETL & DATA MODELING
 
-**Assessment Title**: Sales Data Transformation for Analytical Reporting
+**Title**: Sales Data Transformation for Analytical Reporting
 
 This project implements a complete ETL pipeline for sales data transformation, featuring a **star schema** data warehouse design in SQLite. The solution processes transactional sales data and builds analytical-ready tables to answer key business questions.
 
